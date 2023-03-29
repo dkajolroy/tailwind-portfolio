@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-nunito">
+    <div id="app">
+      <!-- Header Area -->
+      <div class="h-screen">
+        <div class="h-1/2 bg-gradient-to-t from-indigo-200 lg:h-screen">
+          <nav class="fixed top-0 bg-white w-full">
+            <div
+              class="container mx-auto py-5 flex justify-between items-center"
+            >
+              <div class="logo">
+                <img class="h-6" src="./assets/logo.png" alt="logo" />
+              </div>
+              <!-- Bar Icons -->
+              <div class="space-y-1 md:hidden cursor-pointer" id="barIcon">
+                <div class="w-5 h-0.5 bg-gray-800"></div>
+                <div class="w-5 h-0.5 bg-gray-800"></div>
+                <div class="w-5 h-0.5 bg-gray-800"></div>
+              </div>
+              <!-- Menu -->
+              <ul
+                class="list-none absolute md:sticky md:bg-inherit bg-blue-800 md:w-auto md:flex w-full text-center top-0 md:py-0 py-10 rounded-b-3xl md:text-black text-white right-0 transition space-y-3 md:space-y-0 md:space-x-2"
+                id="menu"
+              >
+                <button
+                  id="bar-close"
+                  class="closeMenu md:hidden absolute right-4 top-4 text-3xl"
+                >
+                  x
+                </button>
+                <li>
+                  <a
+                    class="hover:bg-red-300 uppercase font-bold py-2 px-2"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:bg-red-300 uppercase font-bold py-2 px-2"
+                    href="#"
+                    >Works</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:bg-red-300 uppercase font-bold py-2 px-2"
+                    href="#"
+                    >About me</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:bg-red-300 uppercase font-bold py-2 px-2"
+                    href="#"
+                    >Contact us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="hover:bg-red-300 uppercase font-bold py-2 px-2"
+                    href="#"
+                    >Services</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <!-- Hero Section -->
+          <div class="h-full justify-end flex-col items-center flex">
+            <img
+              class="object-cover h-3/4"
+              src="./assets/hero.png"
+              alt="hero"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
