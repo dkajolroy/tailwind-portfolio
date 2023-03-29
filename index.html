@@ -31,7 +31,7 @@
               </div>
               <!-- Menu -->
               <ul
-                class="list-none absolute md:sticky md:bg-inherit bg-blue-800 md:w-auto md:flex w-full text-center top-0 md:py-0 py-10 rounded-b-3xl md:text-black text-white right-0 transition space-y-3 md:space-y-0 md:space-x-2"
+                class="invisible list-none absolute md:sticky md:bg-inherit bg-blue-800 md:w-auto md:flex w-full text-center top-0 md:py-0 py-10 rounded-b-3xl md:text-black text-white right-0 transition space-y-3 md:space-y-0 md:space-x-2"
                 id="menu"
               >
                 <button
@@ -80,12 +80,28 @@
           </nav>
 
           <!-- Hero Section -->
-          <div class="h-full justify-end flex-col items-center flex">
+          <div
+            class="h-full justify-end flex-col overflow-hidden relative items-center flex"
+          >
+            <!-- Title -->
+            <div class="absolute top-20 left-10">
+              <h2 class="text-2xl font-bold uppercase">Welcome</h2>
+            </div>
+            <!-- Quat -->
+            <div class="absolute right-0 top-20 w-1/3">
+              <p class="text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+                possimus.
+              </p>
+            </div>
             <img
               class="object-cover h-3/4"
               src="./assets/hero.png"
               alt="hero"
             />
+            <div
+              class="w-60 h-60 rounded-full lg:hidden sm:block hidden -bottom-10 -z-10 bg-black absolute"
+            ></div>
           </div>
         </div>
       </div>
