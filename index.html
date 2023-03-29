@@ -16,7 +16,7 @@
       <!-- Header Area -->
       <div class="h-screen">
         <div class="h-1/2 bg-gradient-to-t from-indigo-200 lg:h-screen">
-          <nav class="fixed top-0 bg-white w-full">
+          <nav class="fixed top-0 z-50 bg-white w-full">
             <div
               class="container mx-auto py-5 flex justify-between items-center"
             >
@@ -31,7 +31,7 @@
               </div>
               <!-- Menu -->
               <ul
-                class="invisible list-none absolute md:sticky md:bg-inherit bg-blue-800 md:w-auto md:flex w-full text-center top-0 md:py-0 py-10 rounded-b-3xl md:text-black text-white right-0 transition space-y-3 md:space-y-0 md:space-x-2"
+                class="hidden list-none z-50 absolute md:sticky md:bg-inherit bg-blue-800 md:w-auto md:flex w-full text-center top-0 md:py-0 py-10 rounded-b-3xl md:text-black text-white right-0 transition space-y-3 md:space-y-0 md:space-x-2"
                 id="menu"
               >
                 <button
@@ -95,12 +95,12 @@
               </p>
             </div>
             <img
-              class="object-cover h-3/4"
+              class="object-cover absolute md:right-5 h-3/4"
               src="./assets/hero.png"
               alt="hero"
             />
             <div
-              class="w-60 h-60 rounded-full lg:hidden sm:block hidden -bottom-10 -z-10 bg-black absolute"
+              class="w-60 h-60 rounded-full md:right-20 lg:hidden sm:block hidden -bottom-10 -z-10 bg-black absolute"
             ></div>
           </div>
         </div>
