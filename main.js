@@ -7,3 +7,10 @@ barIcon.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
   menu.classList.toggle("hidden");
 });
+
+// Theme
+const theme = document.getElementById("theme");
+const body = document.querySelector("body");
+theme.addEventListener("click", () => {
+  body.classList.toggle("dark");
+});
